@@ -5,9 +5,18 @@
 
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
-<body>
+<body onload="init()">
+	<!-- canvas for panning background -->
 	<canvas id="background" width="600" height="360">
 		Please try a different browser.
+	</canvas>
+
+	<!-- canvas for enemy ships and bullets -->
+	<canvas id="main" width="600" height="360">
+	</canvas>
+
+	<!-- canvas for the ship -->
+	<canvas id="ship" width="600" height="360">
 	</canvas>
 	<script src="js/shooter.js"></script>
 </body>
